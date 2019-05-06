@@ -1,14 +1,18 @@
 import React, { Component } from "react";
 import "./App.css";
 
-import ExchangedCurrency from "./Components/CurrencyConverter";
+import ExchangedCurrencyHOC from "./Components/CurrencyConverterHOC";
+import ExchangedCurrencyRender from "./Components/CurrencyConverterHOC";
+
 
 class App extends Component {
   render() {
     return (
       <>
         <h2>Higher Order Component</h2>
-        <ExchangedCurrency />
+        <ExchangedCurrencyHOC />
+        <h2>Render Props</h2>
+        <ExchangedCurrencyRender render={() => {}} />
       </>
     );
   }

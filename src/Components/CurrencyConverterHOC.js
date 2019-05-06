@@ -75,6 +75,6 @@ const withCurrency = BaseComponent =>
     }
   };
 
-const ExchangedCurrency = withCurrency(CurrencyDisplay);
+const ExchangedCurrencyHOC = withCurrency(CurrencyDisplay);
 
-export default ExchangedCurrency;
+export default ExchangedCurrencyHOC;
